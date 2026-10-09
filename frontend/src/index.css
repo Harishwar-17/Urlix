@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #07090e;
+    --card-dark: #0f1420;
+    --border-dark: #1e2638;
+    --accent-cyan: #06b6d4;
+    --accent-emerald: #10b981;
+    --accent-violet: #8b5cf6;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Subtle cyber security grid background pattern */
+.cyber-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Radial ambient glowing gradient */
+.cyber-glow {
+  background: radial-gradient(circle at 50% 10%, rgba(6, 182, 212, 0.15), rgba(16, 185, 129, 0.04) 40%, transparent 70%);
+}
